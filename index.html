@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aurelia Privée, salón de estética y spa en Cali. Estética avanzada y rituales de bienestar diseñados para ti.">
+  <title>Aurelia Privée | Estética y Spa en Cali</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+    <style>
+      body { overflow-x: hidden; }
+      .footer-social a { width: 30px; height: 30px; border: 1px solid #596159; display: grid; place-items: center; transition: border-color .2s, transform .2s; }
+      .footer-social a:hover { border-color: var(--accent); transform: translateY(-2px); }
+      .footer-social img { width: 16px; height: 16px; object-fit: contain; }
+    </style>
+</head>
+<body>
+  <div class="announcement">Valoración inicial sin costo <span aria-hidden="true">·</span> Cali, Colombia</div>
+  <header class="site-header" id="inicio">
+    <a class="brand" href="#inicio" aria-label="Aurelia Privée, ir al inicio">
+      <img src="IMAGENES/LOGO.png" alt="Aurelia Privée">
+      <span><b>Aurelia Privée</b><small>Salón de Estética y Spa</small></span>
+    </a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Navegación principal">
+      <a class="active" href="#inicio">Inicio</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="header-cta" href="#contacto">Reserva tu cita <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">Aesthetic rituals · Since 2016</p>
+        <h1>Despierta la mejor <em>versión</em> de tu piel en Cali</h1>
+        <p class="hero-intro">En <strong>Aurelia Privée</strong> fusionamos la estética avanzada con rituales de bienestar para realzar tu belleza natural a cualquier edad. Descubre un espacio exclusivo diseñado para ti.</p>
+        <a class="button button-dark" href="#contacto">Reserva tu valoración gratuita <span aria-hidden="true">↗</span></a>
+        <div class="hero-note"><span class="line"></span><span>Tu belleza, en calma</span></div>
+      </div>
+      <div class="hero-image-wrap">
+        <div class="hero-image"><img src="IMAGENES/IMAGEN PRINCIPAL - MUJER ACOSTADA.jpg" alt="Mujer disfrutando un ritual de bienestar facial" fetchpriority="high"></div>
+        <div class="hero-stamp"><span>Privée</span><strong>AP</strong><span>beauty rituals</span></div>
+        <div class="hero-caption"><span>01</span><span>Ritual de bienvenida</span></div>
+      </div>
+    </section>
+
+    <section class="catalog section-wrap" id="catalogo">
+      <div class="section-heading">
+        <div><p class="eyebrow">Nuestra selección</p><h2>Rituales que <em>revelan</em><br>tu luz natural</h2></div>
+        <p class="heading-copy">Cada tratamiento nace de una mirada experta y sensible: ciencia, técnica y pausa para que te sientas bien en tu propia piel.</p>
+      </div>
+      <div class="catalog-grid">
+        <article class="treatment-card featured"><div class="card-image"><img src="IMAGENES/IMAGEN 3 - PLASMA.jpg" alt="Tratamiento de Plasma Rico en Plaquetas"><span class="card-index">01</span></div><div class="card-content"><h3>Plasma Rico en Plaquetas <span>PRP</span></h3><p>Estimula la regeneración celular y la producción natural de colágeno para un rostro visiblemente más joven, firme y luminoso.</p><div class="card-meta"><span>Desde</span><strong>$300.000 <small>COP</small></strong></div></div></article>
+        <article class="treatment-card"><div class="card-image"><img src="IMAGENES/IMAGEN 2 - HIDRATACION FACIAL.jpg" alt="Hidratación facial profunda"><span class="card-index">02</span></div><div class="card-content"><h3>Hidratación Facial Profunda</h3><p>Infusión de vitaminas y principios activos de alta gama que devuelven la vitalidad, frescura y suavidad a tu piel.</p><div class="card-meta"><span>Desde</span><strong>$120.000 <small>COP</small></strong></div></div></article>
+        <article class="treatment-card"><div class="card-image"><img src="IMAGENES/IMAGEN 1- ACIDO HIALURONICO.jpg" alt="Armonización facial con ácido hialurónico"><span class="card-index">03</span></div><div class="card-content"><h3>Armonización Facial</h3><p>Procedimientos estéticos mínimamente invasivos orientados a equilibrar y resaltar tus facciones con resultados sutiles y elegantes.</p><div class="card-meta"><span>Desde</span><strong>$1.200.000 <small>COP</small></strong></div></div></article>
+        <article class="treatment-card"><div class="card-image"><img src="IMAGENES/IMAGEN 5 - SPA.jpg" alt="Ritual de spa Privée"><span class="card-index">04</span></div><div class="card-content"><h3>Ritual Spa Privée</h3><p>Una experiencia de desconexión total para cuerpo y mente, diseñada para liberar el estrés y renovar tu energía vital.</p><div class="card-meta"><span>Desde</span><strong>$150.000 <small>COP</small></strong></div></div></article>
+        <article class="treatment-card"><div class="card-image"><img src="IMAGENES/IMAGEN 6 - MASAJE CORPORAL.jpg" alt="Masaje corporal reductor o relajante"><span class="card-index">05</span></div><div class="card-content"><h3>Masajes Corporales <span>Reductores o Relajantes</span></h3><p>Técnicas especializadas para modelar la silueta o aliviar las tensiones musculares acumuladas del día a día.</p><div class="card-meta"><span>Desde</span><strong>$100.000 <small>COP</small></strong></div></div></article>
+        <article class="treatment-card"><div class="card-image"><img src="IMAGENES/IMAGEN 4 - DRENAJE CORPORAL.jpg" alt="Drenaje corporal"><span class="card-index">06</span></div><div class="card-content"><h3>Drenaje Corporal</h3><p>Técnica especializada que favorece la circulación, ayuda a disminuir la retención de líquidos y aporta una sensación renovada de ligereza.</p><div class="card-meta"><span>Desde</span><strong>$500.000 <small>COP</small></strong></div></div></article>
+      </div>
+    </section>
+
+    <section class="services" id="servicios">
+      <div class="section-wrap"><div class="services-top"><p class="eyebrow">La experiencia Privée</p><h2>Bienestar con <em>intención</em></h2><p>Un cuidado completo, preciso y profundamente personal.</p></div>
+        <div class="service-list">
+          <article class="service-item"><span class="service-number">01</span><div><h3>Estética Facial Avanzada</h3><p>Tratamientos vanguardistas y seguros adaptados a las necesidades de tu tipo de piel, previniendo y tratando los signos de la edad.</p></div><span class="service-arrow">↗</span></article>
+          <article class="service-item"><span class="service-number">02</span><div><h3>Bienestar y Spa Exclusivo</h3><p>Espacios de relajación profunda concebidos para cuidar tu salud mental y física, brindándote un respiro en medio de la ciudad.</p></div><span class="service-arrow">↗</span></article>
+          <article class="service-item"><span class="service-number">03</span><div><h3>Moldeado Corporal Profesional</h3><p>Procedimientos corporales orientados a tonificar, reducir y perfilar tu figura con tecnología de punta y personal altamente calificado.</p></div><span class="service-arrow">↗</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact section-wrap" id="contacto">
+      <div class="contact-intro"><p class="eyebrow">Hablemos de ti</p><h2>Contáctanos<br><em>en Cali</em></h2><p>¿Lista para transformar tu cuidado personal? Escríbenos y agenda tu cita o valoración hoy mismo.</p><div class="contact-details"><span>Visítanos</span><strong>Cali, Colombia</strong><span>WhatsApp</span><strong><a href="https://wa.me/573188563155" target="_blank" rel="noopener noreferrer">+57 318 856 3155</a></strong><span>Escríbenos</span><strong>hola@aureliaprivée.co</strong></div></div>
+      <form class="contact-form" id="contact-form"><label for="name">Nombre completo<input id="name" name="name" type="text" placeholder="Tu nombre completo" required></label><label for="email">Correo electrónico<input id="email" name="email" type="email" placeholder="tu_correo@email.com" required></label><label for="message">Tu mensaje<textarea id="message" name="message" rows="4" placeholder="Cuéntanos qué procedimiento te interesa o qué dudas tienes..." required></textarea></label><button class="button button-dark" type="submit">Enviar Mensaje <span aria-hidden="true">↗</span></button><p class="form-status" role="status"></p></form>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-brand"><img src="IMAGENES/LOGO.png" alt="Aurelia Privée"><p>Estética que se siente.<br>Belleza que permanece.</p></div><div class="footer-social"><span>Encuéntranos</span><a href="https://www.instagram.com/camirosero__?stkn=MTM2aGt5eDRz-ZGw5aw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Aurelia Privée"><img src="IMAGENES/ICONO INSTAGRAM.jpg" alt="Instagram"></a><a href="https://facebook.com/maria.rosero.2707" target="_blank" rel="noopener noreferrer" aria-label="Facebook de Aurelia Privée"><img src="IMAGENES/ICONO FACEBOOK.png" alt="Facebook"></a><a href="https://www.tiktok.com/@camirosero_?_r=1&_t=ZS-99ybrFLJRP3" target="_blank" rel="noopener noreferrer" aria-label="TikTok de Aurelia Privée"><img src="IMAGENES/TIK TOK ICONO.png" alt="TikTok"></a></div><div class="footer-bottom"><span>© 2026 Aurelia Privée - Cali, Colombia. Todos los derechos reservados.</span><a href="#inicio">Volver arriba ↑</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
